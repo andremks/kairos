@@ -1,0 +1,64 @@
+
+
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/*ICON BT5*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+
+:root{
+    --pri: #5D13E7;
+    --sec: #05D197;
+
+    --dark: #151D3B;
+    --light: #F2F3F5;
+    --cta: #ff0077;
+}
+body{font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #330191, #5D13E7, #330191);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;}
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+/**********************************************/
+
+.bg-sec{background-color: var(--sec); color: var(--light); box-shadow: 0 3px 30px var(--sec);}
+.bg-sec:hover{background-color: #03af7e;}
+.kairos{color: var(--light); font-size: 2.5em; font-weight: bold;}
+.trader{color: var(--sec); font-size: 4em; font-weight: 900; margin-top: -25px;}
+.ico{font-size: 1.5em;}
+.pts{font-size: 2.8em;}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--sec); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cta); 
+  }
